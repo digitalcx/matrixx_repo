@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+       
+<ion-grid style="background-color: #143b64;height: 100%">
+    <ion-row style="height: 25%;">
+          <ion-col col-11 text-center>
+              <img height="100" width="200" src="assets/imgs/mat.png" />
+            </ion-col>
+            <div><ion-col><ion-icon name="ionic" color="primary" (click) ="goSettingsPage()" ></ion-icon></ion-col></div>
+    </ion-row>
+    <ion-row style="height: 25%;">
+          <ion-col text-center  style="color: white">
+            welcome!
+          </ion-col>
+    </ion-row>
+    <ion-row style="height: 15%;background-color: #143b64" >
+        <ion-col text-center>
+            <button ion-button style="color: black;background-color:white" (click) ="goGetStartedPage()" >SIGN IN</button>
+            <p style="color: white">OR</p>
+          <div> <button ion-button style="background-color: darkorange" (click) ="goSingUPPage()" >SGIN UP</button></div> 
+       </ion-col>
+      </ion-row>
+     
+        
+  
+  </ion-grid>
+
+</ion-content>

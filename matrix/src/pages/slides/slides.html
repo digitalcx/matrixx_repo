@@ -1,0 +1,20 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Slides</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content>
+<ion-slides pager="true" (ionSlideDidChange)="slidechanged()"  no-lines style="border:0;padding:0;"style="background-color: #143b64">
+  <ion-slide *ngFor="let slide of slider"  >
+<img [src]="slide.image"/>
+<h2 [innerHTML]="slide.title"></h2>
+<p [innerHTML]="slide.description"></p>
+  </ion-slide>
+</ion-slides>
+
+<button ion-button color="danger" full no-lines style="border:0;padding:0;" >Start</button>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+    
+<ion-grid style="background-color: #143b64;height: 100%">
+  <ion-row style="height: 25%;">
+        <ion-col col-11 text-center>
+            <img height="100" width="200" src="assets/imgs/mat.png" />
+          </ion-col>
+          <div><ion-col><ion-icon name="ionic" color="primary" (click) ="goSettingsPage()" style="align-items: center"></ion-icon></ion-col></div>
+          
+  </ion-row>
+  <ion-row style="height: 25%;">
+        <ion-col text-center  style="color: white">
+          welcome!
+        </ion-col>
+  </ion-row>
+
+  <ion-row style="height: 35%; background-color: #143b64" >
+    <ion-col col-4></ion-col>
+      <ion-col  text-center>
+        <ion-item no-lines style="border:0; background-color: #143b64  " >
+          <ion-label style=" font-size:small; color: white">By clicking on the box and clicking the 
+            <br/> button, you areindicating that you have read <br/> and agree to the terms of:
+          </ion-label>
+          <ion-checkbox [(ngModel)]="agree" (ionChange)="updatebutton()" color="danger" ></ion-checkbox>
+        </ion-item>
+         our  <a (click) ="goLicensePage()"  style="color: coral"> End User License Agreement</a>
+         </ion-col>
+         <ion-col col-4></ion-col>
+        </ion-row>
+
+    <ion-row style="height: 15%;background-color: #143b64" >
+        <ion-col text-center>
+            <button ion-button round style="background-color: coral" (click) ="goAnOtherPage()" [disabled]="!isenabled">AGREE & CONTINUE</button>
+       </ion-col>
+      </ion-row>
+</ion-grid>
+</ion-content>
